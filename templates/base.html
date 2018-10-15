@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+    <head>
+        <title>{{title}}</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+        <nav>
+            <a href='/blog?sort=newest'>List all entries (newest-first)</a> 
+            <a href='/blog'>List all entries (oldest-first)</a> 
+            <a href='/new_entry'>Add a Blog Entry</a> 
+            <!-- <a href='/blog'>List all entries (oldest-first)</a>
+            <a href='/blog?sort=newest'>List all entries (newest-first)</a>
+            <a href='/new_entry'>Add a Blog Entry</a> -->
+        </nav>
+    </head>
+<body>
+    
+    <main>
+        
+
+        <div class="container">
+            
+            {% with messages = get_flashed_messages() %}
+                {% for message in messages %}
+                    <div class="flash_message">{{message|safe}}</div>
+                {% endfor %}
+            {% endwith %}
+
+            {% block content %}
+            {% endblock %}
+
+        </div> 
+    </main>
+
+</body>
+</html>

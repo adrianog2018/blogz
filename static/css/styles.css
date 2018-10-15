@@ -46,7 +46,7 @@ body {
   }
   
   #submit_button {
-      background-color: lightgreen;
+      background-color: rgb(144, 211, 238);
       border-radius:2px;
       border:none;
       color: rgb(28, 86, 212);

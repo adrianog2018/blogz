@@ -1,71 +1,71 @@
 body {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 100%;
-  }
-  
-  
-  nav a {
-    list-style-type: none;
+    font-family: sans-serif;
+    width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.error {
+    color: red;
+}
+
+label {
+    display: block;
+    font-size: 20px;
+}
+
+input[type=text],
+input[type=password] {
+    width: 400px;
+    font-size: 20px;
+    padding: 2px;
+}
+
+textarea {
+    width: 400px;
+    height: 200px;
+    font-size: 17px;
+    font-family: monospace;
+}
+
+input[type=submit] {
+    font-size: 24px;
+}
+
+hr {
+    margin: 20px auto;
+}
+
+.post + .post {
+    margin-top: 20px;
+}
+
+.post-title {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.post-body {
     margin: 0;
+    font-size: 17px;
+}
+
+.post-author {
+    font-style: italic;
+    font-size: 12px;
+}
+
+nav ul {
     padding: 0;
-    overflow: hidden;
-    cursor: pointer;
-    border-radius:2px;
-    background-color: rgb(102, 232, 241);
-    color: rgb(29, 82, 255);
-    font-size: 85%;
-    margin-bottom: 1rem;
-    padding: 0.5rem;  
-  }
-  nav a:hover {
-      background:lightblue;
-      box-shadow: 0px 5px 5px #777;
-      left: -3px;
-      position: relative;
-      top: -3px;
-  }
-  main {
-      display: flex;
-      justify-content: flex-start;
-  }
-  
-  .container {
-      margin-left: 3rem;
-  }
-  
-  input {
-      display: block;
-      font-size: 100%;
-      margin: 1rem;
-  }
-  
-  textarea {
-      display: block;
-      font-size: 100%;
-      margin: 1rem;
-  }
-  
-  #submit_button {
-      background-color: rgb(144, 211, 238);
-      border-radius:2px;
-      border:none;
-      color: rgb(28, 86, 212);
-      cursor: pointer;
-      padding: .5em;
-  }
-  
-  #submit_button:hover {
-      background:lightblue;
-      box-shadow: 0px 5px 5px #777;
-      left: -3px;
-      position: relative;
-      top: -3px;
-  }
-  
-  .flash_message {
-      background-color: MistyRose;
-      border-radius: 2px;
-      color: red;
-      margin: 1.25rem;
-      padding: .25rem;
-  }
+    display: inline-block;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+nav #user-account {
+    float: right;
+}
